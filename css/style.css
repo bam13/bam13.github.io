@@ -23,7 +23,7 @@ a:hover {
   position:fixed;
   top: 5px;
   right: 30px;
-  z-index: 1200;
+  z-index: 120;
 }
 
 .row section {
@@ -185,6 +185,8 @@ del colore dello schermo.page-art, .page-photo {
   overflow-y: scroll;
   -webkit-overflow-y: scroll;
   -webkit-overflow-scrolling:touch;
+   width: 100%;
+  height: 100%;
 }
 
 .page-one,
@@ -511,3 +513,4 @@ del colore dello schermo.page-art, .page-photo {
     font-size: 1.1em;
   }
 }
+
