@@ -83,6 +83,19 @@ a:hover {
   color: #000;
 }
 
+#one .close,
+#four .close {
+  color: black;
+}
+
+#two .close,
+#three .close, 
+#art-gal .close,
+#photo-gal .close {
+  color: #fff;
+}
+
+
 #contacts {
   background: url("img/home/torino.png") top center no-repeat;
   background-size: cover;
@@ -456,7 +469,7 @@ del colore dello schermo.page-art, .page-photo {
   color: white;
 }
 
-@media screen and (max-width:1024px) {
+@media only screen and (max-width:1024px) {
 #work1> :first-child ,
 #work2> :first-child,
 #work3> :first-child,
@@ -472,4 +485,14 @@ del colore dello schermo.page-art, .page-photo {
   max-width: 90%;
   max-height: 90%;
 }
+}
+
+@media only screen and (max-width:480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
 }
