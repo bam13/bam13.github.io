@@ -19,7 +19,7 @@ a:hover {
   text-decoration: none;
 }
 
-.close {
+.toclose {
   position:fixed;
   top: 5px;
   right: 30px;
@@ -83,15 +83,15 @@ a:hover {
   color: #000;
 }
 
-#one .close,
-#four .close {
+#one .toclose,
+#four .toclose {
   color: black;
 }
 
-#two .close,
-#three .close, 
-#art-gal .close,
-#photo-gal .close {
+#two .toclose,
+#three .toclose, 
+#art-gal .toclose,
+#photo-gal .toclose {
   color: #fff;
 }
 
