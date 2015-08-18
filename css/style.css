@@ -1,0 +1,475 @@
+body {
+  background-color: #333;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.close {
+  position:fixed;
+  top: 5px;
+  right: 30px;
+  z-index: 1001;
+}
+
+.row section {
+  position: absolute;
+  height: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#one,
+#portfolio {
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: black;
+}
+
+#portfolio {
+  background: url("img/home/portfolio.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#two,
+#web-design {
+  top: 0;
+  left: 50%;
+  background-color: rgba(115, 19, 19, 1);
+  color: #fff;
+}
+
+#web-design {
+  background: url("img/home/gorilloweb.jpg") top center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#three,
+#illustrations {
+  top: 50%;
+  left: 0;
+  background-color: rgba(11, 25, 43, 1);
+  color: #fff;
+}
+
+#illustrations {
+  background: url("img/home/illustration.jpg") top center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#four,
+#contacts {
+  top: 50%;
+  left: 50%;
+  background-color: rgba(141, 212, 48, 1);
+  color: #000;
+}
+
+#contacts {
+  background: url("img/home/torino.png") top center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.box,
+.color {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#one h3 {
+  height: 2.3em;
+}
+
+.color {
+  position: absolute;
+}
+
+.white {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.white:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.red {
+  background-color: rgba(115, 19, 19, 0.4);
+}
+
+.red:hover {
+  background-color: rgba(115, 19, 19, 0.8);
+}
+
+.blue {
+  background-color: rgba(11, 25, 43, 0.4);
+}
+
+.blue:hover {
+  background-color: rgba(11, 25, 43, 0.8);
+}
+
+.green {
+  background-color: rgba(141, 212, 48, 0.4);
+}
+
+.green:hover {
+  background-color: rgba(141, 212, 48, 0.8);
+}
+
+/* da vedere per rendere le scritte della pagina artwork 
+del colore dello schermo.page-art, .page-photo {
+  mix-blend-mode: screen;
+  background-color: rgba(0, 0, 0, 0.8);
+}*/
+
+.page {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  margin-left: 0;
+  padding:5px;
+  overflow: scroll;
+  -webkit-overflow: scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+.page-one,
+.page-two,
+.page-three,
+.page-four {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#art-gal,
+#photo-gal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  opacity: 0;
+  margin-left: 0;
+  padding: 5px;
+  background: rgba(11, 25, 43, 1);
+}
+/*animazione elemento html esterno*/
+
+.content {
+  -webkit-animation-name: content-fullsize;
+  animation-name: content-fullsize;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes content-fullsize {
+  from {
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+}
+
+@keyframes content-fullsize {
+  from {
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+}
+
+.content-negative {
+  -webkit-animation-name: content-neg;
+  animation-name: content-neg;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes content-neg {
+  from {
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes content-neg {
+  from {
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+  }
+}
+
+.content-top {
+  -webkit-animation-name: content-top;
+  animation-name: content-top;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+  color: #fff;
+}
+
+@-webkit-keyframes content-top {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 1100;
+  }
+}
+
+@keyframes content-top {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 1100;
+  }
+}
+
+.awesome-txt {
+  opacity: 0;
+  -webkit-animation-name: text-opacity;
+  animation-name: text-opacity;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  animation-delay:400ms;
+  -webkit-animation-delay:400ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes text-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*fine animazione html esterno*/
+/*animazione awesome bg
+
+#portfolio:hover,
+#web-design:hover,
+#illustrations:hover,
+#contacts:hover {
+  -webkit-animation-name: awesome-bg;
+  animation-name: awesome-bg;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-iteration-count: 15;
+  animation-iteration-count: 15;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes awesome-bg {
+  0% {
+    background-size: 100%;
+    background-position: top center;
+  }
+  100% {
+    background-size: 120%;
+    background-position: top center;
+  }
+}
+
+@keyframes awesome-bg {
+  0% {
+    background-size: 100%;
+    background-position: top center;
+  }
+  100% {
+    background-size: 120%;
+    background-position: top center;
+  }
+}
+/*fine animazione bg home*/
+
+.pd10 {
+  padding: 10px;
+}
+
+.pd30 {
+  padding: 30px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+/*lightbox*/
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1100;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+ .resize {
+  max-width: 60%;
+  max-height: 50%;
+  margin: 0 auto;
+}
+
+.lightbox:target {
+  outline: none;
+  display: block;
+}
+
+#work1> :first-child ,
+#work2> :first-child,
+#work3> :first-child,
+#work4> :first-child {
+  display: inline-block;
+  width: 60%;
+  color: #fff;
+}
+
+.lghtbox-size {
+  max-width: 55%;
+  margin: 30px auto;
+}
+/*lightbox fine*/
+
+.btn-danger {
+  background-color: #B51E1E;
+}
+
+.hvr-back-pulse:hover,
+.hvr-back-pulse:focus,
+.hvr-back-pulse:active {
+  background-color: #1a9f9f;
+  color: white;
+}
+
+@media screen and (max-width:1024px) {
+#work1> :first-child ,
+#work2> :first-child,
+#work3> :first-child,
+#work4> :first-child , .lghtbox-size, .resize {
+  display: inline-block;
+  width: 90%;
+  max-width: 90%;
+  color: #fff;
+}
+
+.lghtbox-size, .resize {
+  width: 90%;
+  max-width: 90%;
+  max-height: 90%;
+}
+}
