@@ -619,9 +619,6 @@ del colore dello schermo.page-art, .page-photo {
   color: white;
 }
 
-.container h2 {
-  font-weight: bold;
-}
 
 @media only screen and (max-width:1024px) {
 #work1> :first-child ,
