@@ -678,6 +678,14 @@ del colore dello schermo.page-art, .page-photo {
 }
 }
 
+@media only screen and (max-width:980px) {
+  #one h3 {
+  height: auto;
+  }
+
+  }
+
+
 @media only screen and (max-width:480px) {
   h1 {
     font-size: 1.5em;
@@ -685,10 +693,6 @@ del colore dello schermo.page-art, .page-photo {
 
   h2 {
     font-size: 1.1em;
-  }
-
-  #one h3 {
-  height: auto;
   }
 
 .page-art >h1,
