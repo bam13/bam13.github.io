@@ -620,20 +620,24 @@ del colore dello schermo.page-art, .page-photo {
   color: white;
 }
 
+.container h1 {
+  font-weight: bold;
+}
+
 @media only screen and (max-width:1024px) {
 #work1> :first-child ,
 #work2> :first-child,
 #work3> :first-child,
-#work4> :first-child , .lghtbox-size, .resize {
+#work4> :first-child , .lghtbox-size{
   display: inline-block;
   width: 90%;
   max-width: 90%;
   color: #fff;
 }
 
-.lghtbox-size, .resize {
-  width: 90%;
-  max-width: 90%;
+ .resize {
+  width: 70%;
+  max-width: 70%;
   max-height: 90%;
 }
 }
