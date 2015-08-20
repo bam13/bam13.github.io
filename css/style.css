@@ -310,7 +310,6 @@ del colore dello schermo.page-art, .page-photo {
 }
 
 .hvr-bob {
-  display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -620,7 +619,7 @@ del colore dello schermo.page-art, .page-photo {
   color: white;
 }
 
-.container h1 {
+.container h2 {
   font-weight: bold;
 }
 
