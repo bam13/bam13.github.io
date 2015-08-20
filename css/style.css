@@ -14,8 +14,8 @@ a {
   color: #fff;
 }
 
-a:hover {
-  color: #fff;
+a:hover, a:focus, a:target {
+  color: #eee;
   text-decoration: none;
 }
 
@@ -24,6 +24,10 @@ a:hover {
   top: 5px;
   right: 30px;
   z-index: 120;
+}
+
+.blacktext {
+  color:#000;
 }
 
 .row section {
@@ -124,7 +128,7 @@ background-color: rgba(11, 25, 43, 1);
 #two .toclose,
 #three .toclose, 
 #art-gal .toclose,
-#photo-gal .toclose {
+#photo-gal .toclose, .bob {
   color: #fff;
 }
 
@@ -157,7 +161,7 @@ background-color: rgba(11, 25, 43, 1);
 }
 
 #one h3 {
-  height: 2.3em;
+  height: 2em;
 }
 
 .color {
@@ -241,6 +245,25 @@ del colore dello schermo.page-art, .page-photo {
   background: rgba(11, 25, 43, 1);
 }
 
+
+.page-art >h1,
+.page-photo>h1 {
+  font-size: 4em;
+  color:rgba(11, 25, 43, 1);
+  background-color: #fff;
+  display: inline-block;
+  transition:background-color 600ms ease-in-out;
+  -webkit-transition:background-color 600ms ease-in-out;
+  transition:color 600ms ease-in-out;
+  -webkit-transition:color 600ms ease-in-out;
+}
+
+.page-art >h1:hover,.page-art >h1:focus,
+.page-photo >h1:hover,.page-art >h1:focus {
+  background-color:rgba(11, 25, 43, 1);
+  color: #fff;
+}
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -318,7 +341,7 @@ del colore dello schermo.page-art, .page-photo {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active, .bob {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
   -webkit-animation-duration: .3s, 1.5s;
@@ -348,6 +371,7 @@ del colore dello schermo.page-art, .page-photo {
   animation-timing-function: ease-in;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;*/
+  right:0;
 }
 
 @-webkit-keyframes content-fullsize {
@@ -382,7 +406,7 @@ del colore dello schermo.page-art, .page-photo {
     z-index: 1000;
     -webkit-transform: scale(1,1);
    transform: scale(1,1);
-     left: 0;
+    left: 0;
     top: 0;
     bottom: 0;
     right:0;
@@ -568,6 +592,10 @@ del colore dello schermo.page-art, .page-photo {
 .mb20 {
   margin-bottom: 20px;
 }
+
+.mb30 {
+  margin-bottom: 30px;
+}
 /*lightbox*/
 
 .lightbox {
@@ -632,9 +660,9 @@ del colore dello schermo.page-art, .page-photo {
 }
 
  .resize {
-  width: 70%;
-  max-width: 70%;
-  max-height: 90%;
+  width: 60%;
+  max-width: 60%;
+  max-height: 100%;
 }
 }
 
@@ -646,5 +674,13 @@ del colore dello schermo.page-art, .page-photo {
   h2 {
     font-size: 1.1em;
   }
+
+  #one h3 {
+  height: auto;
+}
+.page-art >h1,
+.page-photo>h1 {
+  font-size: 2em;
+
 }
 
