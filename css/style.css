@@ -618,7 +618,19 @@ del colore dello schermo.page-art, .page-photo {
 
 .lightbox:target {
   outline: none;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #work1> :first-child ,
@@ -632,7 +644,7 @@ del colore dello schermo.page-art, .page-photo {
 
 .lghtbox-size {
   max-width: 55%;
-  margin: 30px auto;
+  
 }
 /*lightbox fine*/
 
