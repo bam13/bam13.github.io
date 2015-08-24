@@ -5,11 +5,29 @@ $(document).ready(function() {
     });
 
   $('.page-two').on('click',function(){
-       $("#webworkspage").load("webworks.html"); 
+      $("#webworkspage").load("webworks.html", function(){ 
+        setTimeout(function(){
+           $("#two").load('webworks-inner.html');
+         }, 400);  
+      }); 
     });
 
    $('.page-three').on('click',function(){
-       $("#artworkpage").load("artwork.html"); 
+       $("#artworkpage").load("artwork.html",function(){
+         $('.page-art').click(function(){
+        $("#art-gallery").load("artgallery.html"); 
+        });
+
+        $('.page-photo').click(function(){
+            $("#photo-gallery").load("photogallery.html"); 
+        });
+   
+
+        $('.fa-times').click(function(){
+         $('#art-gal', '#photo-gal').removeClass("content-top");
+        });
+       }); 
+
     });
 
     $('.page-four').on('click',function(){

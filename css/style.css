@@ -83,6 +83,10 @@ background-color: rgba(115, 19, 19, 1);
   -webkit-background-size: cover;
 }
 
+.hide {
+  display: none;
+}
+
 #two,
 #web-design,
  {
@@ -385,7 +389,7 @@ del colore dello schermo.page-art, .page-photo {
   to {
     opacity: 1;
     z-index: 1000;
-      left: 0;
+    left: 0;
     top: 0;
     bottom: 0;
     right:0;
