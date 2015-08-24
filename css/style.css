@@ -212,8 +212,8 @@ del colore dello schermo.page-art, .page-photo {
   opacity: 0;
   margin-left: 0;
   padding:5px;
-  overflow-y: scroll;
-  -webkit-overflow-y: scroll;
+  overflow-y: auto;
+  -webkit-overflow-y: auto;
   -webkit-overflow-scrolling:touch !important;
   width: 100%;
   height: 100%;
