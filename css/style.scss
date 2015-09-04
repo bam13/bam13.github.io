@@ -95,10 +95,10 @@ a {
 }
 
 .toclose {
-  position:fixed;
+  position:absolute;
   top: 5px;
   right: 30px;
-  z-index: 120;
+  z-index: 1020;
 	#one &,
 	#four & {
     color:$black;
@@ -124,6 +124,7 @@ a {
 }
 
 	.scale1 {
+    right:0;
 		background: $white;
 		@include origin(top left);
      +#one{
@@ -140,6 +141,7 @@ a {
 	}
 
 	.scale3 {
+    right:0;
 		 background: $blue;
 		 @include origin(bottom left);
       +#three{
@@ -380,7 +382,6 @@ a {
 
 .content {
 @include animate(content-fullsize 300ms ease-in forwards, 1);
-right:0;
 }
 
 @include keyframes(content-fullsize) {

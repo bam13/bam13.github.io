@@ -20,10 +20,10 @@ a:hover, a:focus, a:target, a:active {
 }
 
 .toclose {
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 30px;
-  z-index: 120;
+  z-index: 1020;
 }
 
 #one .toclose,
@@ -53,6 +53,7 @@ a:hover, a:focus, a:target, a:active {
 }
 
 .scale1 {
+  right: 0;
   background: #fff;
   -o-transform-origin: top left;
   -moz-transform-origin: top left;
@@ -77,6 +78,7 @@ a:hover, a:focus, a:target, a:active {
 }
 
 .scale3 {
+  right: 0;
   background: #0B192B;
   -o-transform-origin: bottom left;
   -moz-transform-origin: bottom left;
@@ -375,7 +377,6 @@ bob:active {
   -webkit-animation-iteration-count: 1;
   -moz-animation-iteration-count: 1;
   -o-animation-iteration-count: 1;
-  right: 0;
 }
 
 @-webkit-keyframes content-fullsize {
