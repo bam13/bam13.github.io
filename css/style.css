@@ -246,6 +246,7 @@ a:hover, a:focus, a:target, a:active {
   margin-left: 0;
   padding: 5px;
   background: #0B192B;
+  color: #fff;
 }
 
 .page-art > h1,
