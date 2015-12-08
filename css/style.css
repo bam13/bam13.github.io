@@ -6,6 +6,10 @@ a {
   color: #fff;
 }
 
+.greentext {
+  color: #79a736;
+}
+
 a:hover, a:focus, a:target, a:active {
   color: #eee;
   text-decoration: none;
